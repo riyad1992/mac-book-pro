@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-center mt-5 text-black-50">Mac BookPro M1</h1>
+        <hr class="w-50 m-auto mt-0">
+    </header>
+    <!-- main section start -->
+    <main  class="container mt-5">
+        <section>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="./images/mac.png" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Customize your blue 24-inch iMac with Apple M1 chip.</h2>
+                    <p class="mb-5">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage TWo Thunderbolt/ USB 4 ports Magic MOuse Magic Keyboard- Us English </p>
+                    <h3 class="d-block">Memory</h3>
+                    <button onclick="getClicked('extra-memory-cost', 0)" id="memory-8gb" class="mb-2 p-2">8GB unified memory</button>
+                    <button onclick="getClicked('extra-memory-cost', 180)" id="memory-16gb" class="mb-5 p-2">16GB unified memory</button>
+                    <h3 class="d-block">Storage</h3>
+                    <button onclick="getClicked('extra-storage-cost', 0)" id="ssd-256gb" class="mb-2 p-2">256GB SSD storage</button>
+                    <button onclick="getClicked('extra-storage-cost', 100)" id="ssd-512gb" class="mb-2 p-2">512GB SSD storage</button>
+                    <button onclick="getClicked('extra-storage-cost', 180)" id="ssd-1tb" class="mb-5 p-2">1TB SSD storage</button>
+                    <h3 class="d-block">Choose your delivery option</h3>
+                    <button onclick="getClicked('delivery-charge', 0)" id="free-delivery" class="mb-2 p-2">Friday, aug 25 FREE Prime Delivery</button>
+                    <button onclick="getClicked('delivery-charge', 20)" id="delivery-cost" class="mb-5 p-2">Friday, aug 21 Delivery charge $20</button>
+                    <!-- price list start here  -->
+                    <div class="d-flex">
+                        <div class="me-lg-5">
+                            <h5>Best Price</h5>
+                            <hr class="mt-0">
+                            <h5>Extea Memory Cost</h5>
+                            <hr class="mt-0">
+                            <h5>Extra Storage Cost</h5>
+                            <hr class="mt-0">
+                            <h5>Delivery charge</h5>
+                            <hr class="mt-0 border border-2 border-dark">
+                            <h5>Total Price</h5>
+                            <hr>
+                        </div>
+                        <div class="ms-5">
+                            <h5>$ <span id="best-price" class="costs">1299</span></h5>
+                            <hr class="mt-0">
+                            <h5>$ <span id="extra-memory-cost" class="costs">0</span></h5>
+                            <hr class="mt-0">
+                            <h5>$ <span id="extra-storage-cost" class="costs">0</span></h5>
+                            <hr class="mt-0">
+                            <h5>$ <span id="delivery-charge" class="costs">0</span></h5>
+                            <hr class="mt-0 border border-2 border-dark">
+                            <h5>$ <span id="total-price">1299</span></h5>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- price list end here  -->
+                    <!-- pomo code  -->
+                    <p class="mt-5 mb-0">Add Pomo code</p>
+                    <input type="text" name="" id="pomo-code">
+                    <button class="bg-danger text-white px-2" id="pomo-code-btn">Apply</button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- pomo price section-->
+        <section>
+            <h1 class="text-center">Total: $ <span id="total">1299</span></h1>
+        </section>
+    </main>
+    <!-- main section end -->
+
+    <!-- javascript sheet  -->
+    <script src="./app.js"></script>
+</body>
+</html>
